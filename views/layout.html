@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<body>
+
+  <h1>{{.Title}}</h1>
+  <form action="/auth/logout"  method="get">
+    <header style="display: flex; gap: 50px; margin-bottom: 30px;">
+      
+
+      <a href="/">
+        <span>Home</span>
+      </a>
+      <a href="/signup">
+        <span>Sign Up</span>
+      </a>
+      <a href="/login">
+        <span>Log In</span>
+      </a>
+      <a href="/user/me">
+        <span>About Me</span>
+      </a>
+      <button type="submit">Log Out</button>
+    </header> </form>
+    {{embed}}
+</body> 
+</html>
