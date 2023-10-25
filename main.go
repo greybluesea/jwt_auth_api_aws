@@ -5,8 +5,8 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/template/html/v2"
-	"github.com/greybluesea/jwt-auth-gofiber/database"
-	routes "github.com/greybluesea/jwt-auth-gofiber/routes"
+	"github.com/greybluesea/jwt_auth_gofiber_aws/database"
+	routes "github.com/greybluesea/jwt_auth_gofiber_aws/routes"
 	"github.com/joho/godotenv"
 )
 
