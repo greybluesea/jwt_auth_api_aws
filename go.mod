@@ -1,4 +1,4 @@
-module github.com/greybluesea/jwt_auth_gofiber_aws
+module github.com/greybluesea/jwt_mvc_on_aws
 
 go 1.21.3
 

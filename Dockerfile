@@ -23,7 +23,7 @@ FROM alpine:latest
 WORKDIR /app
 
 # Copy the binary from the builder stage to the final image
-COPY ./great .
+COPY ./ssl .
 COPY ./views ./views
 COPY --from=builder /usr/src/app/jwt-api .
 

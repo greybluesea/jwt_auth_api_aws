@@ -12,8 +12,8 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/greybluesea/jwt_auth_gofiber_aws/database"
-	"github.com/greybluesea/jwt_auth_gofiber_aws/models"
+	"github.com/greybluesea/jwt_mvc_on_aws/database"
+	"github.com/greybluesea/jwt_mvc_on_aws/models"
 	"golang.org/x/crypto/bcrypt"
 )
 
@@ -78,7 +78,7 @@ func SetAuthRoutes(app *fiber.App) {
 			Value:    token,
 			HTTPOnly: true,
 			Expires:  time.Now().Add(7 * 24 * time.Hour),
-			Secure:   true,
+			//		Secure:   true,
 		})
 
 		return c.Status(fiber.StatusFound).Redirect("../user/me")
@@ -120,7 +120,7 @@ func SetAuthRoutes(app *fiber.App) {
 			Value:    token,
 			HTTPOnly: true,
 			Expires:  time.Now().Add(7 * 24 * time.Hour),
-			Secure:   true,
+			//	Secure:   true,
 		})
 
 		return c.Status(fiber.StatusFound).Redirect("../user/me")

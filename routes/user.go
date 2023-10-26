@@ -35,7 +35,7 @@ func restricted(c *fiber.Ctx) error {
 	claims := user.Claims.(jwt.MapClaims)
 	name := claims["name"].(string)
 
-	return c.Render("home", fiber.Map{"Title": fmt.Sprintln("Welcome ", name)})
+	return c.Render("me", fiber.Map{"Title": fmt.Sprintln("Welcome, ", name)})
 	//	return c.SendString("Welcome " + name)
 
 	//return c.SendString("Hello, welcome to the JWT auth GoFiber server")

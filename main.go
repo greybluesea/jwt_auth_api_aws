@@ -5,17 +5,17 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/template/html/v2"
-	"github.com/greybluesea/jwt_auth_gofiber_aws/database"
-	routes "github.com/greybluesea/jwt_auth_gofiber_aws/routes"
-	"github.com/joho/godotenv"
+	"github.com/greybluesea/jwt_mvc_on_aws/database"
+	routes "github.com/greybluesea/jwt_mvc_on_aws/routes"
+	// "github.com/joho/godotenv"
 )
 
 func main() {
-	err := godotenv.Load()
+	/* err := godotenv.Load()
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}
-
+	*/
 	database.ConnectDB()
 	engine := html.New("./views", ".html")
 	app := fiber.New(
@@ -24,7 +24,7 @@ func main() {
 			ViewsLayout: "layout",
 		})
 	app.Get("/", func(c *fiber.Ctx) error {
-		return c.Render("home", fiber.Map{"Title": "Hello, welcome to the JWT auth GoFiber api 👋!"})
+		return c.Render("home", fiber.Map{"Title": "Hello and welcome, this is a JWT-authenticated MVC webapp on AWS👋!"})
 		//	return c.SendString("Hello, welcome to the JWT auth GoFiber api 👋!")
 	})
 

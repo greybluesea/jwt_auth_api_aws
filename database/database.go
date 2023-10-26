@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/greybluesea/jwt_auth_gofiber_aws/models"
+	"github.com/greybluesea/jwt_mvc_on_aws/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

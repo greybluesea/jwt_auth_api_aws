@@ -1,4 +1,4 @@
-## JWT auth on GoFiber api (GORM + Postgres, dockerised, MVC) - inspired by TDot Code
+## JWT auth MVC on AWS (ECS-Fargate w load balancer + RDS-Postgres) - inspired by TDot Code
 
-Youtube: [https://youtu.be/dD7qZF1S9Ao](https://youtu.be/dD7qZF1S9Ao)
+Youtube: [https://youtu.be/nfgMX4Kw2_M](https://youtu.be/nfgMX4Kw2_M)
 ![screenshot](/screenshot.png)
